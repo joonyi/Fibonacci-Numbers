@@ -17,8 +17,8 @@ void main()
 		f3 = i;
 	else
 	{
-	        f3 = f1 + f2;
-        	f1 = f2;
+	        f3 = f1 + f2; //f(n)=f(n-1)+f(n-2)
+        	f1 = f2; //update value
         	f2 = f3;
 	}
 	if(f3%3==0 &&f3!=0) printf("Buzz\n");
