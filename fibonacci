@@ -13,20 +13,19 @@ void main()
   
   for (i=0; i<n; i++)
   {		
-		if ( i<=1 )
-			f3 = i;
-		else
-		{
-        f3 = f1 + f2;
-
-        f1 = f2;
-        f2 = f3;
-		}
-		if(f3%3==0 &&f3!=0) printf("Buzz\n");
-		else if (f3%5==0 && f3!=0) printf("Fizz\n");
-		else if (isPrime(f3)==1) printf("BuzzFizz\n");
-    else printf("%d\n", f3);		
+	if ( i<=1 )
+		f3 = i;
+	else
+	{
+	        f3 = f1 + f2;
+        	f1 = f2;
+        	f2 = f3;
 	}
+	if(f3%3==0 &&f3!=0) printf("Buzz\n");
+	else if (f3%5==0 && f3!=0) printf("Fizz\n");
+	else if (isPrime(f3)==1) printf("BuzzFizz\n");
+    	else printf("%d\n", f3);		
+   }
 	return;
 }
 
